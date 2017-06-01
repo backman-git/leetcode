@@ -33,6 +33,10 @@ class Solution(object):
 				res+='1'
 		return res
 
+	def flip2(self,strs):
+
+		return ''.join(['1' if x=='0' else '0' for x in strs])
+
 	def findComplement(self, num):
 		"""
 		:type num: int
@@ -42,8 +46,6 @@ class Solution(object):
 		numBit=bin(num)[2:]
 
 		numBitComplement = self.flip(numBit)
-
-		print numBitComplement
 
 		return int(numBitComplement,2)
 
