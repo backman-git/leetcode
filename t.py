@@ -1,9 +1,4 @@
 
 
 
-def fn():
-
-	return [] or [100]
-
-
-print fn()
+print any([False,False,False])
