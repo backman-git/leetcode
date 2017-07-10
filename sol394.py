@@ -5,7 +5,6 @@ class Solution(object):
 		ptr1=0
 		while ptr1 <len(s):
 			if s[ptr1] =="[":
-
 				nPtr=ptr1-1
 				nStr=""
 				while nPtr>=0 and s[nPtr].isdigit() :
