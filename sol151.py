@@ -18,4 +18,8 @@ sol:
 class Solution:
 
 	def reverseWords(self, s):
-		return " ".join(s.strip().split()[::-1])
+		return " ".join(s.split()[::-1])
+
+sol =Solution()
+
+print sol.reverseWords("111 222 321")

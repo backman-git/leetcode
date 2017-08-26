@@ -1,21 +1,7 @@
-
-
-import collections
-
-
-
-
 class Solution(object):
 	def distributeCandies(self, candies):
-	
-		if candies ==[]:
-			return 0
-
-		cnt=collections.Counter(candies)
-		nType=len([(t,n) for t,n in cnt.items()])
-		return min(nType,len(candies)/2)
-
-
+		cSet = set(candies)
+		return min(len(cSet),len(candies)/2)
 
 
 

@@ -19,16 +19,14 @@ class Solution(object):
 		while len(queue) !=0:
 			while len(queue)!=0:
 				n=queue.pop(0)
-				print n.val
 				if self.deep == d-1:
-			
 					newNode=TreeNode(v)
 					newNode.left=n.left
 					n.left=newNode
-
 					newNode=TreeNode(v)
 					newNode.right=n.right
 					n.right=newNode
+					return root
 				
 				if n.left is not None:
 					tmpQ.append(n.left)
@@ -40,6 +38,8 @@ class Solution(object):
 			tmpQ=[]
 
 		return root
+
+		
 
 
 

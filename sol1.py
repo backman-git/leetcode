@@ -1,5 +1,5 @@
 
-
+'''
 1. Two Sum
 
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
@@ -22,7 +22,7 @@ Key Point:
 		O(n)
 
 	2. use two pointer also can solve but need sort the array!
-
+'''
 
 
 
@@ -45,6 +45,12 @@ class Solution(object):
 				needTlb[target-nums[i]] = i
 			
 	
-#by 
+#by recursion
 		
+class Solution(object):
+
+	def twoSum(self,nums,target):
+		
+
+
 		

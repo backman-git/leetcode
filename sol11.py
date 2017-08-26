@@ -1,33 +1,22 @@
 class Solution(object):
-	def fizzBuzz(self, n):
-		"""
-		:type n: int
-		:rtype: List[str]
-		"""
+	def maxArea(self, height):
 
-		if n==0:
-			return []
+		
+		ptrH,ptrT = 0, len(height)-1
 
-		ans=[]
+		res=0
+		while ptrH < ptrT:
+			res = max(min(height[ptrH],height[ptrT])*(ptrT-ptrH),res)
 
-		for i in range(1,n+1):
-			tmp=""
+			if height[ptrH] < height[ptrT]:
+				ptrH+=1
+			else:
+				ptrT-=1
 
-			if i%3==0:
-				tmp+="Fizz"
-			if i%5==0:
-				tmp+="Buzz"
-
-			if len(tmp)==0: 
-				tmp=str(i)
-
-			ans.append(tmp)
-
-		return ans
+		return res
 
 
 
 sol = Solution()
 
-
-print sol.fizzBuzz(15)
+print sol.maxArea([2,1,1,2])

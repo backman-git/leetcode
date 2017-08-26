@@ -1,13 +1,7 @@
 
 
+ary = [1,3,4,5]
 
+del ary[2]
 
-
-
-ary=[ i for i in range(10)]
-
-for a in ary:
-	print a
-
-
-
+print ary
