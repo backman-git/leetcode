@@ -6,9 +6,8 @@ about me:
 
 
 Resume :
-
-[Intro.pdf](https://github.com/backman-git/CV/blob/master/Chung_Yi_Kao.pdf)
+[CV.pdf](https://github.com/backman-git/CV/blob/master/Chung_Yi_Kao.pdf)
 
 Project Report:
-[Intro.pdf](https://github.com/backman-git/CV/blob/master/projectReport2017.pdf)
+[project report.pdf](https://github.com/backman-git/CV/blob/master/projectReport2017.pdf)
 
