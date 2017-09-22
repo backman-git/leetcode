@@ -32,6 +32,7 @@ class Solution(object):
 		return res
 
 
+
 sol =Solution()
 
 a1=[4,1,2]
